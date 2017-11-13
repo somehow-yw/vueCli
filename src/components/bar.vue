@@ -1,12 +1,14 @@
 <template>
   <div>
-    <tab-bar :tabs="tabs" />
+    <horizontal-menu :tabs="tabs" />
+    <h1>这是tab</h1>
+    <router-view/>
   </div>
 </template>
 <script>
-import tabBar from './tabBar.vue'
+import horizontalMenu from './horizontalmenu.vue'
 export default {
-  components: {tabBar},
+  components: {horizontalMenu},
   name: 'bar',
   data () {
     return {
@@ -15,8 +17,6 @@ export default {
         {key: 'role', name: '角色管理'}
       ]
     }
-  },
-  methods: {
   }
 }
 </script>

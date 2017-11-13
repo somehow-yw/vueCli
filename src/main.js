@@ -7,11 +7,19 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // 引入elementUI_end
+// 引入vuex
+import store from './store'
+// 引入axios
+import axios from 'axios'
+import vueResource from 'vue-resource'
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
 Vue.use(ElementUI)
+Vue.use(vueResource)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }
