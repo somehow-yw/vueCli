@@ -1,16 +1,11 @@
 {
-    "code": 0,
-    "message": "OK",
-    "data": [
-      {
-        "id": 510100,
-        "name": "成都市",
-        "level": 20
-      },
-      {
-        "id": 510101,
-        "name": "绵阳市",
-        "level": 20
-      }
-    ]
-  }
+  "code": 0,
+  "data": {
+    "user_infos": {
+      "name": "root",
+      "department_id": "1",
+      "login_name": "10000000000"
+    }
+  },
+  "message": "OK"
+}

@@ -11,11 +11,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 // 引入axios
 import axios from 'axios'
-import vueResource from 'vue-resource'
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
 Vue.use(ElementUI)
-Vue.use(vueResource)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
